@@ -1,0 +1,56 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+StateError: Bad state: Cannot add event after closing
+
+```
+#0      _StreamController.add (dart:async/stream_controller.dart:553:24)
+#1      _StreamSinkWrapper.add (dart:async/stream_controller.dart:826:13)
+#2      AppConnection.runMain (package:dwds/src/connections/app_connection.dart:33:22)
+#3      WebDevFS.connect.<anonymous closure> (package:flutter_tools/src/isolated/devfs_web.dart:669:25)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.2.1, on Microsoft Windows [Version 10.0.19043.985], locale en-IN)
+    • Flutter version 2.2.1 at C:\src\flutter
+    • Framework revision 02c026b03c (2 days ago), 2021-05-27 12:24:44 -0700
+    • Engine revision 0fdb562ac8
+    • Dart version 2.13.1
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.3)
+    • Android SDK at C:\Users\RAJA PALAI\AppData\Local\Android\sdk
+    • Platform android-30, build-tools 30.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 4.1.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+
+[✓] VS Code (version 1.56.2)
+    • VS Code at C:\Users\RAJA PALAI\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.22.0
+
+[✓] Connected device (2 available)
+    • Chrome (web) • chrome • web-javascript • Google Chrome 90.0.4430.212
+    • Edge (web)   • edge   • web-javascript • Microsoft Edge 90.0.818.66
+
+• No issues found!
+```
